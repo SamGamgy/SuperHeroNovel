@@ -1,0 +1,19 @@
+---
+layout: 'base.njk'
+---
+
+<article>
+
+    <div class=" article-head container">
+
+        <h1>{{title}}</h1>
+        <h4>{{date}}</h4>
+        <h4>{{author}}</h4>
+
+        <img src="{{image}}" alt="{{imgAlt}}">
+
+    </div>
+    <div class='container article-content'>
+        {{content | safe}}
+    </div>
+</article>

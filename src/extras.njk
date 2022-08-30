@@ -1,0 +1,17 @@
+---
+title: Extras
+layout: 'base.njk'
+--- 
+        <section >
+            <div class='background'></div>
+            <div class='extra-content'>
+                
+                    {%- for post in collections.post | reverse -%}
+                       {% include 'article-snippet.njk' %}
+                    {%- endfor %}
+            </div>
+        </section>
+    
+
+    
+  

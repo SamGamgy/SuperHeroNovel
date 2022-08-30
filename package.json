@@ -1,0 +1,27 @@
+{
+  "name": "fear.her.wrath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamGamgy/novel.promosite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamGamgy/novel.promosite/issues"
+  },
+  "homepage": "https://github.com/SamGamgy/novel.promosite#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "luxon": "^3.0.3"
+  }
+}

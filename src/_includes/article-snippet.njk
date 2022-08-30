@@ -1,0 +1,14 @@
+ <div class='container blog-post'>
+                            <div>
+                                <h3>{{post.data.title}}</h3>
+                                <h5>{{post.date | postDate}}</h5>
+                                <h5>{{post.data.author}}</h5>
+                            </div>
+                            <div>
+                                <p> {{post.data.description}}</p>
+                            </div>
+                            <div>
+                                <img src="{{post.data.image}}" alt="{{post.data.imgAlt}}">
+                            </div>
+                            <a class='btn' href="{{post.url}}">Continue Reading</a>
+                        </div>
