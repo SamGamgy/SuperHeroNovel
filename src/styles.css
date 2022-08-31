@@ -260,7 +260,7 @@ footer div {
 .blog-post {
     padding: 2rem 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 5rem;
@@ -294,6 +294,10 @@ footer div {
 }
 .article-snippet-btn{
     font-size: 1.4rem;
+    width:175px;
+}
+.snippet-description{
+    width:100%
 }
 /* article page */
 article {
@@ -322,6 +326,9 @@ article {
 .article-head h4{
     font-size: 1.5rem;
     font-weight: 300;
+}
+.article-head img{
+    padding: 5% 10%;
 }
 article a {
     width: 300px;
@@ -390,6 +397,7 @@ textarea {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 5rem;
+    margin-bottom: 6rem;
 
 }
 .character {
