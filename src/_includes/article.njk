@@ -1,19 +1,30 @@
 ---
+title: Characters
+icon1: about-split.png
+icon2: characters-split.png
+icon3: extras.png
+icon4: contact-split.png
+selected3: active
 layout: 'base.njk'
 ---
 
-<article>
+<section class='article-section'>
+    <div class="background"> </div>
+    <article>
+        <div class=" article-head container">
 
-    <div class=" article-head container">
-
-        <h1>{{title}}</h1>
-        <h4>{{date}}</h4>
-        <h4>{{author}}</h4>
+        <div class='flex-container'>
+            <h1>{{title}}</h1>
+            <h4>{{date | postDate}}</h4>
+            <h4>{{author}}</h4>
+        </div>
 
         <img src="{{image}}" alt="{{imgAlt}}">
 
-    </div>
-    <div class='container article-content'>
+        </div>
+        <div class='container article-content'>
         {{content | safe}}
-    </div>
-</article>
+        </div>
+    <a href="/extras/" class='btn'>Back to Extras</a>
+    </article>
+</section>

@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3fde3b7a1f.js" crossorigin="anonymous"></script>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>Extras</title>
     </head>
@@ -16,84 +17,108 @@
         <header>
             <nav>
                 <ul>
-                    <li class="nav-btns" id="about"><img src="/assets/about.png" alt=""></li>
-                    <li class="nav-btns" id="chars"><img src="/assets/characters.png" alt=""></li>
-                    <li><img src="/assets/wrath-logo.png" alt=""></li>
-                    <a href='/extras/'><li class="nav-btns" id="extras"><img src="/assets/extras.png" alt=""></li></a>
-                    <li class="nav-btns" id="contact"><img src="/assets/contact.png" alt=""></li>
+                    <a href='/index.html'>
+                        <li class="nav-btns " id="about">
+                            
+                            <img src="/assets/about-split.png" alt="">
+                        </li>
+                    </a>
+                    <a href="/character/">
+                        <li class="nav-btns " id="chars">
+                            
+                            <img src="/assets/characters-split.png" alt="">
+                        </li>
+                    </a>
+                    <li>
+                        <img class='logo' src="/assets/wrath-logo.png" alt="">
+                    </li>
+                    <a href='/extras/'>
+                        <li class="nav-btns active" id="extras">
+                            
+                            <img src="/assets/extras.png" alt="">
+                        </li>
+                    </a>
+                    <a href="/contact/">
+                        <li class="nav-btns " id="contact">
+                            
+                            <img src="/assets/contact-split.png" alt="">
+                        </li>
+                    </a>
                 </ul>
                 <div class="line"></div>
             </nav>
+            <script> 
+                const button = document.querySelectorAll('.nav-btns');
+                console.log(button);
+                for (let i=0; i < button.length; i++) {
+                    button[i].addEventListener('click', function() {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                        console.log('click')
+                    });
+                }
+            </script>
 </header>
          
-        <section >
+        <section class='extras-section'>
             <div class='background'></div>
             <div class='extra-content'> <div class='container blog-post'>
-                            <div>
-                                <h3>My Fifth Post</h3>
-                                <h5>Sep 23, 2022</h5>
-                                <h5>Timothy James</h5>
-                            </div>
-                            <div>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                            </div>
-                            <div>
-                                <img src="/assets/about.png" alt="">
-                            </div>
-                            <a class='btn' href="/blog/2022-09-24-my-fifth-post/">Continue Reading</a>
-                        </div> <div class='container blog-post'>
-                            <div>
-                                <h3>My Fourth Post</h3>
-                                <h5>Sep 11, 2022</h5>
-                                <h5>Timothy James</h5>
-                            </div>
-                            <div>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                            </div>
-                            <div>
-                                <img src="/assets/about.png" alt="">
-                            </div>
-                            <a class='btn' href="/blog/2022-09-19-my-fourth-post copy/">Continue Reading</a>
-                        </div> <div class='container blog-post'>
-                            <div>
-                                <h3>My Third Post</h3>
-                                <h5>Sep 11, 2022</h5>
-                                <h5>Timothy James</h5>
-                            </div>
-                            <div>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                            </div>
-                            <div>
-                                <img src="/assets/about.png" alt="">
-                            </div>
-                            <a class='btn' href="/blog/2022-09-12-my-third-post copy/">Continue Reading</a>
-                        </div> <div class='container blog-post'>
-                            <div>
-                                <h3>My Second Post</h3>
-                                <h5>Sep 3, 2022</h5>
-                                <h5>Timothy James</h5>
-                            </div>
-                            <div>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                            </div>
-                            <div>
-                                <img src="/assets/about.png" alt="">
-                            </div>
-                            <a class='btn' href="/blog/2022-09-04-my-second-post copy/">Continue Reading</a>
-                        </div> <div class='container blog-post'>
-                            <div>
-                                <h3>My First Post</h3>
-                                <h5>Aug 29, 2022</h5>
-                                <h5>Timothy James</h5>
-                            </div>
-                            <div>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                            </div>
-                            <div>
-                                <img src="/assets/about.png" alt="">
-                            </div>
-                            <a class='btn' href="/blog/2022-08-30-my-first-post copy/">Continue Reading</a>
-                        </div>
+    <div>
+        <div class=article-snippet-heading>
+            <h3>My Fifth Post</h3>
+            <h5>Sep 23, 2022</h5>
+            <h5>Timothy James</h5>
+        </div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+    </div>
+    
+    <a class='btn article-snippet-btn' href="/blog/2022-09-24-my-fifth-post/">Continue Reading</a>
+</div> <div class='container blog-post'>
+    <div>
+        <div class=article-snippet-heading>
+            <h3>My Fourth Post</h3>
+            <h5>Sep 11, 2022</h5>
+            <h5>Timothy James</h5>
+        </div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+    </div>
+    
+    <a class='btn article-snippet-btn' href="/blog/2022-09-19-my-fourth-post copy/">Continue Reading</a>
+</div> <div class='container blog-post'>
+    <div>
+        <div class=article-snippet-heading>
+            <h3>My Third Post</h3>
+            <h5>Sep 11, 2022</h5>
+            <h5>Timothy James</h5>
+        </div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+    </div>
+    
+    <a class='btn article-snippet-btn' href="/blog/2022-09-12-my-third-post copy/">Continue Reading</a>
+</div> <div class='container blog-post'>
+    <div>
+        <div class=article-snippet-heading>
+            <h3>My Second Post</h3>
+            <h5>Sep 3, 2022</h5>
+            <h5>Timothy James</h5>
+        </div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+    </div>
+    
+    <a class='btn article-snippet-btn' href="/blog/2022-09-04-my-second-post copy/">Continue Reading</a>
+</div> <div class='container blog-post'>
+    <div>
+        <div class=article-snippet-heading>
+            <h3>My First Post</h3>
+            <h5>Aug 29, 2022</h5>
+            <h5>Timothy James</h5>
+        </div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+    </div>
+    
+    <a class='btn article-snippet-btn' href="/blog/2022-08-30-my-first-post copy/">Continue Reading</a>
+</div>
             </div>
         </section>
     

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3fde3b7a1f.js" crossorigin="anonymous"></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <title>Characters</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href='/index.html'>
+                        <li class="nav-btns " id="about">
+                            
+                            <img src="/assets/about-split.png" alt="">
+                        </li>
+                    </a>
+                    <a href="/character/">
+                        <li class="nav-btns active" id="chars">
+                            
+                            <img src="/assets/characters.png" alt="">
+                        </li>
+                    </a>
+                    <li>
+                        <img class='logo' src="/assets/wrath-logo.png" alt="">
+                    </li>
+                    <a href='/extras/'>
+                        <li class="nav-btns " id="extras">
+                            
+                            <img src="/assets/extras-split.png" alt="">
+                        </li>
+                    </a>
+                    <a href="/contact/">
+                        <li class="nav-btns " id="contact">
+                            
+                            <img src="/assets/contact-split.png" alt="">
+                        </li>
+                    </a>
+                </ul>
+                <div class="line"></div>
+            </nav>
+            <script> 
+                const button = document.querySelectorAll('.nav-btns');
+                console.log(button);
+                for (let i=0; i < button.length; i++) {
+                    button[i].addEventListener('click', function() {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                        console.log('click')
+                    });
+                }
+            </script>
+</header>
+         
+        <section class='character-section'>
+            <div class='background'></div>
+            <div class='character-content'>
+                <div class='character'>
+                    <h2>Maggie Hunt</h2>
+                    <img src="/assets/Maggie-Hunt.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio, architecto ab veritatis molestias nostrum iure quasi ipsum quidem accusantium voluptatibus aliquam beatae qui cum fuga. Placeat sunt odio sequi?</p>
+                </div>
+                <div class='character'>
+                    <h2>Ellie</h2>
+                    <img src="/assets/Ellie.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio, architecto ab veritatis molestias nostrum iure quasi ipsum quidem accusantium voluptatibus aliquam beatae qui cum fuga. Placeat sunt odio sequi?</p>
+                </div>
+                <div class='character'>
+                    <h2>Character 3</h2>
+                    <img src="/assets/Character-3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio, architecto ab veritatis molestias nostrum iure quasi ipsum quidem accusantium voluptatibus aliquam beatae qui cum fuga. Placeat sunt odio sequi?</p>
+                </div>
+                <div class='character'>
+                    <h2>Character 4</h2>
+                    <img src="/assets/Character-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio, architecto ab veritatis molestias nostrum iure quasi ipsum quidem accusantium voluptatibus aliquam beatae qui cum fuga. Placeat sunt odio sequi?</p>
+                </div>
+                <div class='character'>
+                    <h2>Ice Mane</h2>
+                    <img src="/assets/Icemane.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio, architecto ab veritatis molestias nostrum iure quasi ipsum quidem accusantium voluptatibus aliquam beatae qui cum fuga. Placeat sunt odio sequi?</p>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div>
+                <h6>Site Created By:</h6>
+                <p>Sam Elder</p>
+            </div>
+</footer>
+    <script>
+    if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+    }
+</script>
+    </body>
+</html>

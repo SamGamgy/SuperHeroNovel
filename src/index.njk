@@ -1,31 +1,45 @@
 ---
 title: Home Page
+icon1: about.png
+icon2: characters-split.png
+icon3: extras-split.png
+icon4: contact-split.png
+selected1: active
 layout: 'base.njk'
 --- 
         
-        <section >
+        <section class='novel-section'>
             <div class="background"> </div>
             <div class="about">
                 <div class="container">
-                    <div class="novel-cover">
-                        <div class="img-wrapper">
-                            <img src="/assets/poster-border.png" alt="cover">
+                    <div class="novel-info">
+                        <h1>Fear Her Wrath</h1>
+                        <div class='flex-container'>
+                            <h3 class='author-sub-title'>Tim James</h3>
+                            <h3>Vol. 1 - Fall 2021</h3>
+                        </div>
+                        <h2>Synopsis</h2>
+                        <p>Maggie Hunt is a superhero. Well, technically she's a costumed vigilante, both for legal reasons and because she has no superpowers to speak of. As the self-declared defender of Fenley Island in Marbrose City (aka The Fen), she faces mafiosi, corrupt politicians, obligatory counseling sessions, and her own bad decisions.</p>
+
+                        
+                        <div class="button"><a class = 'btn' target='_blank' href="https://www.wattpad.com/story/258510637-fear-her-wrath"> Read The Full Novel Here</a></div>
+                        <div class='sub-text'>
+                            <i class="fa-solid fa-m"></i> Rated Mature for violence and some dark subject matter (no smut). 
+                            <br/><br/>
+                            <i class="fa-regular fa-registered"></i> All Rights Reserved
                         </div>
                     </div>
                 </div>
                 <div class="container">
-                    <div class="novel-info">
-                        <h1>Synopsis</h1>
-                        <h3>Vol. 1 - Fall 2021</h3>
-                        <p>Maggie Hunt is a superhero. Well, technically she's a costumed vigilante, both for legal reasons and because she has no superpowers to speak of. As the self-declared defender of Fenley Island in Marbrose City (aka The Fen), she faces mafiosi, corrupt politicians, obligatory counseling sessions, and her own bad decisions.</p>
-
-                        <div>Rated Mature for violence and some dark subject matter (no smut). Cover art by Joy Lee (Instagram: _.flit ) All Rights Reserved</div>
-                        
-                        <div class="button"><a class = 'btn' target='_blank' href="https://www.wattpad.com/story/258510637-fear-her-wrath"> Read it Here</a></div>
+                    <div class="novel-cover">
+                        <div class="img-wrapper">
+                            <img src="/assets/cover mockup 3.jpg" alt="cover">
+                            <div class='img-caption'>Cover art by Joy Lee <i class="fa-brands fa-instagram"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class='container'>
+            <div class='container featured'>
                     <h3>Featured Content</h3>
                     <div class='extra-content'>
                         {%- for post in collections.featured | reverse -%}
