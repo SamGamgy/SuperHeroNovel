@@ -26,21 +26,18 @@ ul {
     margin:0;
     list-style:none;
 }
-
 img{
     width:100%;
     max-width:100%;
     vertical-align: middle;
     border-style: none;
 }
-
 .container { 
     margin-left:auto;
     margin-right:auto;
     width:100%;
     padding-right:1rem;
     padding-left:1rem;
-    
 }
 
 /* ABOUT */
@@ -57,22 +54,14 @@ nav {
     position: relative;
 
 }
-.nav-btns img {
-    height:50px;
-}
-.nav-btns {
-    transition: all 0.3s ease;
-}
+.nav-btns img { height:50px;}
+.nav-btns {transition: all 0.3s ease;}
 .nav-btns:hover {
     cursor: pointer;
     border-bottom: 5px solid rgb(97,6,153);
 }
-.active {
-    border-bottom: 5px solid rgb(97,6,153);
-}
-.logo {
-    width:200px
-}
+.active {border-bottom: 5px solid rgb(97,6,153);}
+.logo { width:200px}
 ul {
     color:white;
     display: flex;
@@ -85,9 +74,7 @@ li {
     text-transform: uppercase;
     font-weight: 200;
 }
-li .logo {
-    width:200px;
-}
+li .logo { width:200px;}
 .line {
     position:absolute;
     bottom: 0;
@@ -98,13 +85,11 @@ li .logo {
     margin-top: 1rem;
     background: linear-gradient(90deg, rgba(205,159,63,1) 0%, rgba(255,189,50,1) 50%, rgba(205,159,63,1) 100%);
 }
-
 .about {
     background: rgb(0 0 0 / 85%);
     border: 10px solid rgb(217,217,217);
     padding-top: 4rem;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 .about .container {
@@ -116,13 +101,8 @@ li .logo {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
-
-section {
-    position: relative;
-}
-.novel-section {
-    padding: 5rem 10%;
-}
+section {position: relative;}
+.novel-section {padding: 5rem 10%;}
 .background  {
     position: absolute;
     top:0;
@@ -157,9 +137,7 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-.novel-info{
-    padding-bottom:3rem;
-}
+.novel-info{padding-bottom:3rem;}
 .novel-info h1{
     color:rgb(205,159,63);
     font-weight: 200;
@@ -190,18 +168,10 @@ html body .author{
     justify-content: space-between;
     height: 45px;
 }
-.novel-info p {
-    font-size: 1.3rem;
-}
-.sub-text {
-    font-size: 0.8rem;
-}
-.sub-text i {
-    margin-right:1rem;
-}
-.fa-m{
-    color: rgb(155, 2, 2);
-}
+.novel-info p {font-size: 1.3rem;}
+.sub-text {font-size: 0.8rem;}
+.sub-text i {margin-right:1rem;}
+.fa-m{color: rgb(155, 2, 2);}
 .button {
     width:100%;
     text-align: center;
@@ -216,17 +186,12 @@ html body .author{
     color:rgb(205,159,63);
     cursor: pointer;
 }
-.btn:hover {
-    background: rgba(74, 74, 74, 0.979);
-}
-
+.btn:hover {background: rgba(74, 74, 74, 0.979);}
 .featured {
     background: #000000e0;
     margin: 5rem 0;
     border: 10px solid rgb(216,216,216);
-
 }
-
 .featured h3 {
     font-size: 4rem;
     font-weight: 200;
@@ -234,7 +199,6 @@ html body .author{
     margin: 1rem 0;
     color: rgba(205,159,63,1);
 }
-
 footer{
     position: absolute;
     bottom: 0;
@@ -245,14 +209,10 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-footer div {
-    text-align: center;
-}
+footer div {text-align: center;}
 
-/* blog */
-.featured .extra-content {
-    border: none;
-}
+/* Blog Snippet*/
+.featured .extra-content {border: none;}
 .extra-content {
     background: #232323e8;
     width: 100%;
@@ -260,9 +220,7 @@ footer div {
     margin: 0rem 0%;
     border: 6px solid rgb(216,216,216);
 }
-.featured .extra-content{
-    background: none;
-}
+.featured .extra-content{background: none;}
 .blog-post {
     padding: 2rem 1rem;
     display: flex;
@@ -271,12 +229,8 @@ footer div {
     width: 100%;
     gap: 5rem;
 }
-.blog-post:nth-child(odd){
-    background: #28282863;
-}
-.extras-section {
-    padding: 5rem 10% 8rem;
-}
+.blog-post:nth-child(odd){background: #28282863;}
+.extras-section {padding: 5rem 10% 8rem;}
 .blog-post h3 {
     font-size: 1.5rem;
     padding: 0;
@@ -302,10 +256,9 @@ footer div {
     font-size: 1.4rem;
     width:175px;
 }
-.snippet-description{
-    width:100%
-}
-/* article page */
+.snippet-description{width:100%}
+
+/* Article Page */
 article {
     width: 100%;
     background: rgba(19, 19, 19, 0.918);
@@ -314,9 +267,7 @@ article {
     height: auto;
     position: relative;
 }
-.article-section {
-    padding: 3rem 10% 10%;
-}
+.article-section {padding: 3rem 10% 10%;}
 .article-content {
     margin-top: 2rem;
     padding-right:15%;
@@ -333,9 +284,7 @@ article {
     font-size: 1.5rem;
     font-weight: 300;
 }
-.article-head img{
-    padding: 5% 10%;
-}
+.article-head img{padding: 5% 10%;}
 article a {
     width: 300px;
     position: absolute;
@@ -344,7 +293,8 @@ article a {
     bottom: 0;
     margin: 2rem auto;
 }
-/* contact */
+
+/* Contact Page */
 .contact-section {
     padding: 3rem 10%;
     height: 880px;
@@ -394,7 +344,7 @@ textarea {
     margin-top:1rem;
 }
 
-/* characters */
+/* Character Page */
 .character-section{
     padding:3rem 10%;
 }
@@ -412,7 +362,6 @@ textarea {
     padding: 1rem;
     border: 6px solid rgba(205,159,63,1);
 }
-
 .character img {
     width: 300px;
     max-height: 400px;
@@ -428,70 +377,46 @@ textarea {
     border-bottom: 6px solid rgb(97,6,153);
 }
 
-/* responsiveness */
+/* Media Queries */
 
 @media (max-width: 2000px) {
-    .background{
-        background-size:50% 150%;
-    }
+    .background{background-size:50% 150%;}
 }
 @media (max-width: 1500px) {
-    .background{
-        background-size:60% 120%;
-    }
-    .about .container {
-        padding-right:2rem;
-    }
+    .background{background-size:60% 120%;}
+    .about .container {padding-right:2rem;}
     .btn {
         font-size: 1.3rem;
         padding:1rem 1rem;
         text-align: center;
     }
-    .novel-section {
-        padding:5rem 5%;
-    }
+    .novel-section {padding:5rem 5%;}
 }
 @media (max-width: 1024px) {
-    .article-section {
-        padding: 3rem 2% 10%;
-    }
-    .article-head .flex-container{
-        height: 100%;
-    }
-    .background{
-        background-size:200% 150%;
-    }
-    .img-wrapper{
-        margin-bottom: 0rem;
-    }
+    .article-section {padding: 3rem 2% 10%;}
+    .article-head .flex-container{height: 100%;}
+    .background{background-size:200% 150%;}
+    .img-wrapper{margin-bottom: 0rem;}
     .about {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         gap:3rem;
         padding-bottom: 2rem;
     }
-    .blog-post {
-        gap:2rem;
-    }
+    .blog-post {gap:2rem;}
     .btn {
         font-size: 1rem;
         padding:1rem 1rem;
     }
-    .article-snippet-btn{
-        text-align: center;
-    }
+    .article-snippet-btn{ text-align: center;}
 }
 @media (max-width:800px) {
-    .article-head .flex-container{
-        flex-flow: column;
-    }
+    .article-head .flex-container{ flex-flow: column;}
     .article-head .flex-container h1, .article-head .flex-container h4 {
         text-align: center;
         margin:0.5rem;
     }
-    article {
-        padding:1rem 0;
-    }
+    article {padding:1rem 0;}
     .article-content{
         font-size: 1rem ;
         padding-left: 5%;
@@ -502,56 +427,34 @@ textarea {
         justify-content: center;
         gap: 1rem;
     }
-    nav{
-        padding: 1rem 0.5rem;
-    }
-    ul{
-        gap:0.5rem;
-    }
-    .logo {
-        display: none;
-    }
-    .contact-section{
-        padding: 3rem 5%;
-    }
+    nav{ padding: 1rem 0.5rem;}
+    ul{gap:0.5rem;}
+    .logo { display: none;}
+    .contact-section{padding: 3rem 5%;}
     .contact-inputs {
         flex-flow:column;
         gap:1rem;
     }
-    textarea {
-        width: -webkit-fill-available;
-    }
+    textarea { width: -webkit-fill-available;}
     .contact {
         width: auto;
         padding:2rem 5%;
     }
-    .contact h2 {
-        font-size: 2.5rem;
-    }
+    .contact h2 {font-size: 2.5rem;}
     footer {
         position: relative;
         background-color: black;
     }
 }
 @media (max-width: 425px) {
-    .contact-inputs input {
-        width: -webkit-fill-available;
-    }
+    .contact-inputs input { width: -webkit-fill-available;}
     .btn {
         font-size: 1rem;
         padding: 1rem 0;
     }
-    article a {
-        width: 150px;
-    }
-    .background{
-        background-size:200% 150%;
-    }
-    
-    .article-snippet-heading{
-        gap:1rem;
-    }
-    
+    article a {width: 150px;}
+    .background{background-size:200% 150%;}
+    .article-snippet-heading{gap:1rem;}
     .about{
         padding-top: 2rem;
         gap:0rem;
@@ -560,47 +463,26 @@ textarea {
         padding-right:1rem;
         padding-left:1rem;
     }
-    .novel-section{
-        padding:2rem 5%;
-    }
-    .novel-info h1{
-        font-size: 3rem;
-    }
+    .novel-section{ padding:2rem 5%;}
+    .novel-info h1{ font-size: 3rem;}
     .article-snippet-heading{
         flex-wrap: wrap;
         gap:0rem
     }
-    .article-snippet-heading h5, .article-snippet-heading h3{
-        margin:0.6rem;
-    }
+    .article-snippet-heading h5, .article-snippet-heading h3{ margin:0.6rem;}
 }
 @media ( max-width: 375px) {
-    .background{
-        background-size: 500% 150%;
-    }
-    
-    .featured h3{
-        font-size: 2rem;
-    }
-    
+    .background{ background-size: 500% 150%;}
+    .featured h3{font-size: 2rem;}
     blog-post p{
         font-size: 0.85rem;
         margin-top: 1rem;
     }
-    
 }
-
 @media (max-width:320px) {
-   
-    .novel-info p{
-        font-size: 1rem;
-    }
-    .flex-container h3{
-        font-size: 1rem;
-    }
-    .featured h3{
-        font-size: 2rem;
-    }
+    .novel-info p{font-size: 1rem;}
+    .flex-container h3{font-size: 1rem;}
+    .featured h3{font-size: 2rem;}
     .article-snippet-heading{
         flex-wrap: wrap;
         gap:0rem
