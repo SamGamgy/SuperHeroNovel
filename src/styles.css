@@ -153,11 +153,13 @@ section {
     margin-bottom: 5rem;
 }
 .novel-cover{
-    width:400px;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
 }
-
+.novel-info{
+    padding-bottom:3rem;
+}
 .novel-info h1{
     color:rgb(205,159,63);
     font-weight: 200;
@@ -174,8 +176,12 @@ section {
     margin-top: 2rem;
 }
 .author-sub-title {
-    color: rgb(97,6,153);
+    color: rgb(122 32 178);
     font-size: 2rem;
+    font-weight: 500;
+}
+html body .author{
+    color: rgb(122 32 178);
     font-weight: 500;
 }
 .flex-container {
@@ -234,9 +240,9 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-    background: #00000069;
+    background: #000000ce;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 footer div {
@@ -420,4 +426,183 @@ textarea {
     font-weight: 200;
     padding-bottom: 1rem;
     border-bottom: 6px solid rgb(97,6,153);
+}
+
+/* responsiveness */
+
+@media (max-width: 2000px) {
+    .background{
+        background-size:50% 150%;
+    }
+}
+@media (max-width: 1500px) {
+    .background{
+        background-size:60% 120%;
+    }
+    .about .container {
+        padding-right:2rem;
+    }
+    .btn {
+        font-size: 1.3rem;
+        padding:1rem 1rem;
+        text-align: center;
+    }
+    .novel-section {
+        padding:5rem 5%;
+    }
+}
+@media (max-width: 1024px) {
+    .article-section {
+        padding: 3rem 2% 10%;
+    }
+    .article-head .flex-container{
+        height: 100%;
+    }
+    .background{
+        background-size:200% 150%;
+    }
+    .img-wrapper{
+        margin-bottom: 0rem;
+    }
+    .about {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap:3rem;
+        padding-bottom: 2rem;
+    }
+    .blog-post {
+        gap:2rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding:1rem 1rem;
+    }
+    .article-snippet-btn{
+        text-align: center;
+    }
+}
+@media (max-width:800px) {
+    .article-head .flex-container{
+        flex-flow: column;
+    }
+    .article-head .flex-container h1, .article-head .flex-container h4 {
+        text-align: center;
+        margin:0.5rem;
+    }
+    article {
+        padding:1rem 0;
+    }
+    .article-content{
+        font-size: 1rem ;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .blog-post {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    nav{
+        padding: 1rem 0.5rem;
+    }
+    ul{
+        gap:0.5rem;
+    }
+    .logo {
+        display: none;
+    }
+    .contact-section{
+        padding: 3rem 5%;
+    }
+    .contact-inputs {
+        flex-flow:column;
+        gap:1rem;
+    }
+    textarea {
+        width: -webkit-fill-available;
+    }
+    .contact {
+        width: auto;
+        padding:2rem 5%;
+    }
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    footer {
+        position: relative;
+        background-color: black;
+    }
+}
+@media (max-width: 425px) {
+    .contact-inputs input {
+        width: -webkit-fill-available;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    article a {
+        width: 150px;
+    }
+    .background{
+        background-size:200% 150%;
+    }
+    
+    .article-snippet-heading{
+        gap:1rem;
+    }
+    
+    .about{
+        padding-top: 2rem;
+        gap:0rem;
+    }
+    .about .container{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    .novel-section{
+        padding:2rem 5%;
+    }
+    .novel-info h1{
+        font-size: 3rem;
+    }
+    .article-snippet-heading{
+        flex-wrap: wrap;
+        gap:0rem
+    }
+    .article-snippet-heading h5, .article-snippet-heading h3{
+        margin:0.6rem;
+    }
+}
+@media ( max-width: 375px) {
+    .background{
+        background-size: 500% 150%;
+    }
+    
+    .featured h3{
+        font-size: 2rem;
+    }
+    
+    blog-post p{
+        font-size: 0.85rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+@media (max-width:320px) {
+   
+    .novel-info p{
+        font-size: 1rem;
+    }
+    .flex-container h3{
+        font-size: 1rem;
+    }
+    .featured h3{
+        font-size: 2rem;
+    }
+    .article-snippet-heading{
+        flex-wrap: wrap;
+        gap:0rem
+    }
 }

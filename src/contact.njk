@@ -11,13 +11,13 @@ layout: 'base.njk'
             <div class='background'></div>
             <div class='contact container'>
                 <h2> Contact the Author </h2>
-                <form action="https://formsubmit.co/samelder925@gmail.com" method="POST">
+                <form action="https://formsubmit.co/76d775f782a759603dcccdf93c9615ae" method="POST">
                     {# honey pot #}
                     <input type="text" name='_honey' style="display: none;">
                     {# disable captcha #}
                     <input type="hidden" name="_captcha" value='false'>
-
-                    <input type="hidden" name='_next' value='https://fearherwrath.netlify.app/contact/success.html'>
+                    {# route to next page #}
+                    <input type="hidden" name='_next' value='https://fearherwrath.netlify.app/success/'>
 
                     <div class='contact-inputs'>
                         <label>Name: </label>
