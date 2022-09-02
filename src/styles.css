@@ -447,6 +447,8 @@ textarea {
     footer {
         position: relative;
         background-color: black;
+        font-size: 0.7rem;
+        gap: 1rem;
     }
 }
 @media (max-width: 425px) {
