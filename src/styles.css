@@ -384,7 +384,10 @@ textarea {
 }
 @media (max-width: 1500px) {
     .background{background-size:60% 120%;}
-    .about .container {padding-right:2rem;}
+    .about .container {
+        padding-right:1rem;
+        padding-left:1rem;
+    }
     .btn {
         font-size: 1.3rem;
         padding:1rem 1rem;
