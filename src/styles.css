@@ -185,8 +185,9 @@ html body .author{
     border-radius: 1px;
     color:rgb(205,159,63);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.btn:hover {background: rgba(74, 74, 74, 0.979);}
+.btn:hover {background: rgba(34, 34, 34, 0.979);}
 .featured {
     background: #000000e0;
     margin: 5rem 0;
@@ -210,6 +211,10 @@ footer{
     align-items: center;
 }
 footer div {text-align: center;}
+.creator {
+    color: gold;
+    font-weight: 400;
+}
 
 /* Blog Snippet*/
 .featured .extra-content {border: none;}
