@@ -13,6 +13,7 @@ layout: 'base.njk'
                 
                     {%- for post in collections.post | reverse -%}
                        {% include 'article-snippet.njk' %}
+                       {# {% console.log(collections.post)%} #}
                     {%- endfor %}
             </div>
         </section>

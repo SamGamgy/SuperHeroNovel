@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3fde3b7a1f.js" crossorigin="anonymous"></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <title>Blog Post One</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href='/index.html'>
+                        <li class="nav-btns " id="about">
+                            <img src="/assets/about-split.png" alt="about">
+                        </li>
+                    </a>
+                    <a href="/character/">
+                        <li class="nav-btns " id="chars">
+                            <img src="/assets/characters-split.png" alt="characters">
+                        </li>
+                    </a>
+                    <li>
+                        <img class='logo' src="/assets/wrath-logo.png" alt="fear her wrath logo">
+                    </li>
+                    <a href='/extras/'>
+                        <li class="nav-btns active" id="extras">
+                            <img src="/assets/extras.png" alt="extras">
+                        </li>
+                    </a>
+                    <a href="/contact/">
+                        <li class="nav-btns " id="contact">
+                            <img src="/assets/contact-split.png" alt="contact">
+                        </li>
+                    </a>
+                </ul>
+                <div class="line"></div>
+            </nav>
+            <script> 
+                const button = document.querySelectorAll('.nav-btns');
+                console.log(button);
+                for (let i=0; i < button.length; i++) {
+                    button[i].addEventListener('click', function() {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                        console.log('click')
+                    });
+                }
+            </script>
+</header>
+        
+<section class='article-section'>
+    <div class="background"> </div>
+    <article>
+        <div class=" article-head container">
+
+        <div class='flex-container'>
+            <h1>Blog Post One</h1>
+            <h4>Sep 15, 2022</h4>
+            <h4 class='author'>John Doe</h4>
+        </div>
+        
+        <img src="/assets/blog/cityscape.jpg" alt="cityscape">
+
+        </div>
+        <div class='container article-content'>
+        <!--StartFragment-->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim. Non sodales neque sodales ut etiam. Dictum fusce ut placerat orci. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Aliquet bibendum enim facilisis gravida neque. Iaculis at erat pellentesque adipiscing. Condimentum lacinia quis vel eros donec ac odio tempor orci. Ipsum dolor sit amet consectetur adipiscing elit duis. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Odio ut sem nulla pharetra diam sit amet. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sodales neque sodales ut etiam sit amet nisl purus. Sed cras ornare arcu dui vivamus arcu felis bibendum.</p>
+<p>Ac feugiat sed lectus vestibulum mattis. Posuere ac ut consequat semper viverra nam libero. Eget est lorem ipsum dolor sit amet. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Malesuada bibendum arcu vitae elementum curabitur vitae. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Faucibus interdum posuere lorem ipsum. Viverra nam libero justo laoreet sit amet cursus sit amet. Leo urna molestie at elementum eu. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Id semper risus in hendrerit gravida rutrum quisque non. Viverra suspendisse potenti nullam ac tortor. In eu mi bibendum neque egestas congue. Aliquam nulla facilisi cras fermentum odio eu feugiat. Turpis in eu mi bibendum.</p>
+<p>Nulla pellentesque dignissim enim sit amet. Fringilla phasellus faucibus scelerisque eleifend. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. Sed id semper risus in hendrerit. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Aliquet enim tortor at auctor urna nunc id. Ullamcorper eget nulla facilisi etiam. Tellus at urna condimentum mattis pellentesque. Morbi enim nunc faucibus a pellentesque sit amet. Viverra vitae congue eu consequat. Mi sit amet mauris commodo. Rhoncus mattis rhoncus urna neque viverra justo. Neque convallis a cras semper. Justo laoreet sit amet cursus sit amet dictum.</p>
+<p>Pulvinar elementum integer enim neque volutpat ac tincidunt. Risus at ultrices mi tempus imperdiet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Accumsan in nisl nisi scelerisque eu ultrices. Risus at ultrices mi tempus imperdiet nulla malesuada. Enim ut sem viverra aliquet eget sit amet. Accumsan lacus vel facilisis volutpat est velit egestas dui id.</p>
+<!--EndFragment-->
+        </div>
+    <a href="/extras/" class='btn'>Back to Extras</a>
+    </article>
+</section>
+        <footer>
+            <div>
+                <i class="fa-solid fa-m"></i> Rated Mature </br>Violence and some dark subject matter <br/>(No Smut).
+            </div> 
+            <div>
+                <i class="fa-regular fa-registered"></i> All Rights Reserved
+            </div>             
+            <div>
+                <h6 style='margin-bottom:0.5rem'>Website Designed & Created By:</h6>
+                <p><a class='creator' target='_blank' href="https://sam-e-samgamgy.vercel.app/">Sam Elder</a></p>
+            </div>
+</footer>
+    <script>
+    if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+    }
+    </script>
+    </body>
+</html>

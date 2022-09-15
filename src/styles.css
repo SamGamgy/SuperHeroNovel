@@ -221,7 +221,7 @@ footer div {text-align: center;}
 .extra-content {
     background: #232323e8;
     width: 100%;
-    height: auto;
+    min-height: 80vh;
     margin: 0rem 0%;
     border: 6px solid rgb(216,216,216);
 }
@@ -235,7 +235,10 @@ footer div {text-align: center;}
     gap: 5rem;
 }
 .blog-post:nth-child(odd){background: #28282863;}
-.extras-section {padding: 5rem 10% 8rem;}
+.extras-section {
+    padding: 5rem 10% 8rem;
+    min-height:100vh;
+}
 .blog-post h3 {
     font-size: 1.5rem;
     padding: 0;

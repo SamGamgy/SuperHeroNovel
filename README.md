@@ -13,7 +13,7 @@ The site is built with HTML CSS and JS, with the use of 11ty and Nunjucks for cr
 The contact page is functional through "Form Submit"
 
 
-The site is currently depolyed through Netflify and uses the "netflify cms" to edit and post blog content.
+The site is currently deployed through Netlify and uses the "netlify cms" to edit and post blog content.
 
 Site link is here: https://fearherwrath.netlify.app/
 
